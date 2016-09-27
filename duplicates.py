@@ -30,10 +30,10 @@ def check_copies():
             else:
                 files[Hash].append(i[0]+'/'+k)
 
-
+if __name__ == '__main__:
 check_copies()
-for i in files:
-    if len(files[i]) > 1:
-        print("Для файла", files[i][0], "найдены слудующие копии:")
-        for k in files[i][1:]:
-            print(k)
+    for i in files:
+        if len(files[i]) > 1:
+            print("Для файла", files[i][0], "найдены слудующие копии:")
+            for k in files[i][1:]:
+                print(k)
